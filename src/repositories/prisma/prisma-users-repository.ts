@@ -18,12 +18,4 @@ export class PrismaUserRepository implements UsersRepository{
     })
     return user
   }
-
- // async findUnique( {name, email, password} ){
-   // return prisma.user.findUnique({
- //   where: {
- //     email,
-//    },
-//  })
-//  }
 }
