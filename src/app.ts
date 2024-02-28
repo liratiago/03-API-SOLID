@@ -1,6 +1,5 @@
 import fastify from 'fastify'
-import { PrismaClient } from '@prisma/Client'
-
+import { register } from './http/controllers/register'
 export const app = fastify()
 
-const prisma = new PrismaClient()
+app.post('/users', register)

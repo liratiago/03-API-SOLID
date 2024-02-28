@@ -8,7 +8,7 @@ const envShema = z.object({
 
 const _env = envShema.safeParse(process.env)
 
-if (_env.sucess ===git config --global core.autocrlf input false) {
+if (_env.sucess === false) {
   console.error('Invalid environment variables', _env.error.format())
   throw new Error('Invalid environment variables.')
 }
