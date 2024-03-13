@@ -4,8 +4,8 @@ Gympass style app.
 
 ## RFs (Requisitos funcionais)
 
-- [ ] It should be possible make registration
-- [ ] It should be possible authentication
+- [ x ] It should be possible make registration
+- [ x ] It should be possible authentication
 - [ ] It should be possible get a user info
 - [ ] It should be possible get ckeckin's quantity
 - [ ] It should be possible get user checkin's history
@@ -17,7 +17,7 @@ Gympass style app.
 
 ## RNs (Regras de negócio)
 
-- [ ] User cannot be registered with a invalid email
+- [ x ] User cannot be registered with a invalid email
 - [ ] User cannot do 2 checkins in the same day
 - [ ] User cannot do checkin if he stay more than 100m far away gym
 - [ ] The checkin can be validated up to 20m after being created
@@ -27,7 +27,7 @@ Gympass style app.
 
 ## RNFs (Requisitos não funcionais)
 
-- [ ] User's password should be encriypted
-- [ ] Aplication data should be stored in PostgreSQL
+- [ x ] User's password should be encriypted
+- [ x ] Aplication data should be stored in PostgreSQL
 - [ ] The data lists should be paginated with 20 itens by page
 - [ ] The user should be identificated by a JWT (Json Web Token)
