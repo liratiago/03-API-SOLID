@@ -6,7 +6,7 @@ Gympass style app.
 
 - [ x ] It should be possible make registration
 - [ x ] It should be possible authentication
-- [ ] It should be possible get a user info
+- [ x ] It should be possible get a user info
 - [ ] It should be possible get ckeckin's quantity
 - [ ] It should be possible get user checkin's history
 - [ ] It should be possible search near gyms
