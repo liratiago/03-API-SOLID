@@ -11,15 +11,15 @@ Gympass style app.
 - [ ] It should be possible get user checkin's history
 - [ ] It should be possible search near gyms
 - [ ] It should be possible search gym by name
-- [ ] It should be possible a user do checkin into a gym
+- [ x ] It should be possible a user do checkin into a gym
 - [ ] It should be possible validate a user's checkin 
 - [ ] It should be possible to register a gym
 
 ## RNs (Regras de negócio)
 
 - [ x ] User cannot be registered with a invalid email
-- [ ] User cannot do 2 checkins in the same day
-- [ ] User cannot do checkin if he stay more than 100m far away gym
+- [ x ] User cannot do 2 checkins in the same day
+- [ x ] User cannot do checkin if he stay more than 100m far away gym
 - [ ] The checkin can be validated up to 20m after being created
 - [ ] The checkin can only be validated by administrators 
 - [ ] The gym can only be register by administrators 
