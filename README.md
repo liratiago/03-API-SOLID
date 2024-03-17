@@ -8,7 +8,7 @@ Gympass style app.
 - [ x ] It should be possible authentication
 - [ x ] It should be possible get a user info
 - [ ] It should be possible get ckeckin's quantity
-- [ ] It should be possible get user checkin's history
+- [ x ] It should be possible get user checkin's history
 - [ ] It should be possible search near gyms
 - [ ] It should be possible search gym by name
 - [ x ] It should be possible a user do checkin into a gym
@@ -29,5 +29,5 @@ Gympass style app.
 
 - [ x ] User's password should be encriypted
 - [ x ] Aplication data should be stored in PostgreSQL
-- [ ] The data lists should be paginated with 20 itens by page
+- [ x ] The data lists should be paginated with 20 itens by page
 - [ ] The user should be identificated by a JWT (Json Web Token)
