@@ -10,10 +10,10 @@ Gympass style app.
 - [ ] It should be possible get ckeckin's quantity
 - [ x ] It should be possible get user checkin's history
 - [ ] It should be possible search near gyms
-- [ ] It should be possible search gym by name
+- [ x ] It should be possible search gym by title
 - [ x ] It should be possible a user do checkin into a gym
 - [ ] It should be possible validate a user's checkin 
-- [ ] It should be possible to register a gym
+- [ x ] It should be possible to register a gym
 
 ## RNs (Regras de negócio)
 
