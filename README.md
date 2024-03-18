@@ -1,5 +1,5 @@
 # App
-
+commit
 Gympass style app.
 
 ## RFs (Requisitos funcionais)
@@ -9,7 +9,7 @@ Gympass style app.
 - [ x ] It should be possible get a user info
 - [ ] It should be possible get ckeckin's quantity
 - [ x ] It should be possible get user checkin's history
-- [ ] It should be possible search near gyms
+- [ ] It should be possible search near gyms ( until 10km )
 - [ x ] It should be possible search gym by title
 - [ x ] It should be possible a user do checkin into a gym
 - [ ] It should be possible validate a user's checkin 
