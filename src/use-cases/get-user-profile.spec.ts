@@ -24,7 +24,7 @@ describe('Ger User Profile User Case', () => {
         })
 
         const { user } = await sut.execute({
-            id: newUser.id,
+            userId: newUser.id,
         })
         expect(user.created_at).toEqual(newUser.created_at)
     })
