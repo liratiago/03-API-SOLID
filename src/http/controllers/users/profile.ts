@@ -11,7 +11,6 @@ export async function profile(
     const { user } = await getUserProfile.execute({
       userId: request.user.sub
     })
-    console.log(user)
 
   return reply.status(200).send({ user, })
 }

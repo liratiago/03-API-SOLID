@@ -2,7 +2,6 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import  request from 'supertest'
 import { app } from '@/app'
 import { createAndAuthenticateUser } from '@/utils/test/create-and-authenticate-user'
-import { Decimal } from '@prisma/client/runtime/library'
 
 
 
@@ -31,7 +30,7 @@ describe('Nearby Gym (e2e)', () => {
             longitude:  -49.6481091,
 
         })
-
+        
         await request(app.server)
         .post('/gyms')
         .set('Authorization', `Bearer ${token}`)
@@ -44,6 +43,7 @@ describe('Nearby Gym (e2e)', () => {
 
         })
         
+      
         const response = await request (app.server)
             .get('/gyms/nearby')
             .query ({
@@ -51,13 +51,15 @@ describe('Nearby Gym (e2e)', () => {
                 userLongitude:  -49.6481091,
             })
             .set('Authorization', `Bearer ${token}`)
+            .send()
+        
 
-        expect(response.status).toEqual(200)
+        expect(response.statusCode).toEqual(200)
         expect(response.body.gyms).toHaveLength(1)
         expect (response.body.gyms).toEqual([
            expect.objectContaining({
                 title: 'Javascript Gym'
-           })
+           }),
         ])      
   
     })

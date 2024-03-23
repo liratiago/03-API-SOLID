@@ -22,7 +22,7 @@ const prisma = new PrismaClient()
 export default <Environment>{
   name: 'prisma',
   async setup() {
-    console.log('Setup')
+    
     const schema = randomUUID()
     const dataBaseURL = generateDatabaseURL(schema)
     
@@ -34,8 +34,6 @@ export default <Environment>{
         await prisma.$executeRawUnsafe(`DROP SCHEMA IF EXISTS "${schema}" CASCADE`, )
         
         await prisma.$disconnect()
-
-        console.log('Teardown')
       },
     }
   },

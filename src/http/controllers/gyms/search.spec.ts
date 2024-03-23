@@ -51,6 +51,7 @@ describe('Search Gym (e2e)', () => {
                 q: 'Javascript'
             })
             .set('Authorization', `Bearer ${token}`)
+            
 
         expect(response.status).toEqual(200)
         

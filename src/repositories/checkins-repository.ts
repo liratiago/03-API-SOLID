@@ -7,7 +7,7 @@ export interface CheckinsRepository{
    
     findById(checkInId: string): Promise<CheckIn | null>
    
-    countByUserId(userId: string): Promise<number>
+    countByUserId (userId: string): Promise<number>
     save(checkIn: CheckIn): Promise <CheckIn>
 }
 

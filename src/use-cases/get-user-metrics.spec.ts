@@ -35,8 +35,8 @@ describe('get user metrics Use Case', () => {
         userId: 'user-2',
        })
        
-       expect(totalUser1).toEqual(22)
-       expect(totalUser2).toEqual(0)
+       expect(totalUser1.checkInsCount).toEqual(22)
+       expect(totalUser2.checkInsCount).toEqual(0)
     })
    
 })
