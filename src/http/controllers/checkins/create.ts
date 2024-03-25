@@ -19,7 +19,7 @@ export async function create(request: FastifyRequest, reply: FastifyReply) {
       }),
   })
 
-  const { latitude, longitude } = createCheckInBodyParametrs.parse(request.query)
+  const { latitude, longitude } = createCheckInBodyParametrs.parse(request.body)
 
   const { gymId } = createCheckInParamsSchema.parse(request.params)
 

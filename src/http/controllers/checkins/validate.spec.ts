@@ -25,7 +25,7 @@ describe('Validate CheckIn (e2e)', () => {
             data: { 
                 title: 'Javascript Gym',
                 latitude: -27.8747279,
-                longitude:-49.4889672,
+                longitude: -49.4889672,
             },
         })
 
@@ -36,11 +36,10 @@ describe('Validate CheckIn (e2e)', () => {
             }
         })
 
-
         const response = await request (app.server)
-        .post(`/check-ins/${checkIn.id}/validate`)
+        .patch(`/check-ins/${checkIn.id}/validate`)
         .set('Authorization', `Bearer ${token}`)
-        .send ()
+        .send()
 
          expect(response.statusCode).toEqual(204)
 
